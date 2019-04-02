@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Button } from './DefaultComponents';
+import SignInCard from './components/SignInCard';
+import { Page } from './DefaultComponents'
 
 class App extends Component {
   render () {
     return (
-      <div>
-        <Button className="submit" primary>Submit</Button>
-      </div>
+      <Page>
+        <SignInCard />
+      </Page>
     )
   }
 }
