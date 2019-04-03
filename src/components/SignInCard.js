@@ -1,9 +1,10 @@
 import React from 'react'
-import { Card, SubmitButton, Input, Label, A } from '../DefaultComponents'
+import { Card, SubmitButton, Input, Label, A, H1 } from '../DefaultComponents'
 
 function SignInCard () {
   return (
     <Card>
+      <H1>Sign In</H1>
       <Label for="email">Email</Label>
       <Input id="email"></Input>
       <Label for="password">Password</Label>

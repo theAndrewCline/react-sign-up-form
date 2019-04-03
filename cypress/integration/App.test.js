@@ -3,6 +3,10 @@ describe('App', () => {
     cy.visit('/')
   })
   describe('Sign In Card', () => {
+    it('should have a title', () => {
+      cy.get('h1')
+        .should('have.text', 'Sign In')
+    })
     it('should have an email input', () => {
       cy.get('form')
         .find('input#email')

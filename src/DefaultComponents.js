@@ -17,7 +17,7 @@ export const Button = styled.button`
 `
 
 export const SubmitButton = styled(Button)`
-  margin-top: auto;
+  margin-top: 1em;
   margin-right: auto;
   margin-left: auto;
 `
@@ -54,6 +54,16 @@ export const A = styled.a`
 export const Label = styled.label`
   font-family: 'Lato', sans-serif;
   margin-top: .5em;
+`
+
+export const H1 = styled.h1`
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
 `
 
 export const Page = styled.div`
