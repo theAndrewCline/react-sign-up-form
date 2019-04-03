@@ -7,6 +7,11 @@ describe('App', () => {
       cy.get('h1')
         .should('have.text', 'Sign In')
     })
+
+    it('should focus the email input first', () => {
+      cy.focused()
+        .should('have.attr', 'id', 'email')
+    })
     it('should have an email input', () => {
       cy.get('form')
         .find('input#email')
