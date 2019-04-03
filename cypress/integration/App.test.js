@@ -16,16 +16,15 @@ describe('App', () => {
     })
 
 
-    it('should have a button to login', () => {
+    it('should have a button to signin', () => {
       cy.get('form')
-        .find('button.login')
+        .find('button.signin')
         .click()
     })
 
-    it.skip('should have an href to link to create account', () => {
-      cy.get('href#signup')
-        .click()
-      // should redirect to '/signup/'
+    it('should have an href to link to create account', () => {
+      cy.get('a#signup')
+        .should('have.attr', 'href')
     })
   })
 })

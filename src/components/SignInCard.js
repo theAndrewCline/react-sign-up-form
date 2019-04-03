@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, SubmitButton, Input, Label } from '../DefaultComponents'
+import { Card, SubmitButton, Input, Label, A } from '../DefaultComponents'
 
 function SignInCard () {
   return (
@@ -8,7 +8,8 @@ function SignInCard () {
       <Input id="email"></Input>
       <Label for="password">Password</Label>
       <Input type="password" id="password"></Input>
-      <SubmitButton className="login" primary>Log In</SubmitButton>
+      <SubmitButton className="signin" primary>Sign In</SubmitButton>
+      <A id="signup" href="/signup">Don't have an account? Sign Up Here</A>
     </Card>
   )
 }

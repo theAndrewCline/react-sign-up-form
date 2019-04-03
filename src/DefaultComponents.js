@@ -42,6 +42,15 @@ export const Input = styled.input`
   font-family: 'Lato', sans-serif;
 `
 
+export const A = styled.a`
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1em;
+`
+
 export const Label = styled.label`
   font-family: 'Lato', sans-serif;
   margin-top: .5em;
