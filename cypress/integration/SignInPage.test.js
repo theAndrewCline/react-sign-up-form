@@ -1,11 +1,16 @@
-describe('App', () => {
-  it('successfully loads', () => {
-    cy.visit('/')
+describe('Sign In Page', () => {
+  it('loads when you visit /signin', () => {
+    cy.visit('/signin')
   })
   describe('Sign In Card', () => {
     it('should have a title', () => {
       cy.get('h1')
         .should('have.text', 'Sign In')
+    })
+
+    it('should focus the email input first', () => {
+      cy.focused()
+        .should('have.attr', 'id', 'email')
     })
     it('should have an email input', () => {
       cy.get('form')

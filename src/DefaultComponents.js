@@ -66,11 +66,30 @@ export const H1 = styled.h1`
   margin-bottom: 0px;
 `
 
+export const Nav = styled.nav`
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  background: #17202c;
+  padding: 1em;
+  box-shadow:  0px 2px 4px rgba(0,0,0,.3);
+`
+
+export const NavUL = styled.ul`
+  display: flex;
+  list-style-type: none;
+`
+
+export const NavLI = styled.li`
+  margin-left: auto;
+`
+
 export const Page = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh; 
+  align-items: flex-start;
+  min-height: calc(100vh - 64px); 
   width: 100vw;
-  background: #3F4546;
+  padding: 3em;
 `

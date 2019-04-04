@@ -1,16 +1,24 @@
-import React, { Component } from 'react';
-import './App.css';
-import SignInCard from './components/SignInCard';
-import { Page } from './DefaultComponents'
+import React, { useState } from 'react'
+import './App.css'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import SignInPage from './pages/SignInPage'
+import SignUpPage from './pages/SignUpPage'
+import HomePage from './pages/HomePage'
+import NavBar from './components/NavBar';
 
-class App extends Component {
-  render () {
-    return (
-      <Page>
-        <SignInCard />
-      </Page>
-    )
-  }
+function App () {
+  const [signedIn, setSignedIn] = useState(false)
+
+  return (
+    <>
+      <NavBar signedIn={signedIn}></NavBar>
+      <Router>
+        <Route path='/' exact component={HomePage}></Route>
+        <Route path='/signin/' component={SignInPage}></Route>
+        <Route path='/signup/' component={SignUpPage}></Route>
+      </Router>
+    </>
+  )
 }
 
 export default App
