@@ -1,8 +1,12 @@
 import React from 'react'
-import { H1 } from '../DefaultComponents';
+import { H1, Page } from '../DefaultComponents';
 
 function HomePage () {
-  return (<H1>Welcome Sir</H1>)
+  return (
+    <Page>
+      <H1>Welcome Sir</H1>
+    </Page>
+  )
 }
 
 export default HomePage

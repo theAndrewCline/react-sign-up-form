@@ -81,8 +81,6 @@ export const NavUL = styled.ul`
   list-style-type: none;
 `
 
-
-
 export const NavLI = styled.li`
   margin-left: auto;
 `
@@ -90,8 +88,8 @@ export const NavLI = styled.li`
 export const Page = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: calc(100vh - 64px); 
   width: 100vw;
-  background: #3F4546;
+  padding: 3em;
 `
