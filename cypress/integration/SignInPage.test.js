@@ -1,6 +1,6 @@
-describe('App', () => {
-  it('successfully loads', () => {
-    cy.visit('/')
+describe('Sign In Page', () => {
+  it('loads when you visit /signin', () => {
+    cy.visit('/signin')
   })
   describe('Sign In Card', () => {
     it('should have a title', () => {

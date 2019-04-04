@@ -1,15 +1,19 @@
 import React, { useState } from 'react'
 import './App.css'
-import SignInPage from './pages/SignInPage';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import SignInPage from './pages/SignInPage'
+import SignUpPage from './pages/SignUpPage'
+import HomePage from './pages/HomePage'
 
 function App () {
   const [signedIn, setSignedIn] = useState(false)
 
   return (
-    <div>
-      {signedIn ? <h1>Ready To Go</h1> : <SignInPage></SignInPage>}
-    </div>
-
+    <Router>
+      <Route path='/' exact component={HomePage}></Route>
+      <Route path='/signin/' component={SignInPage}></Route>
+      <Route path='/signup/' component={SignUpPage}></Route>
+    </Router>
   )
 }
 
