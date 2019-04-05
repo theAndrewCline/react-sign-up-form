@@ -10,14 +10,12 @@ function App () {
   const [signedIn, setSignedIn] = useState(false)
 
   return (
-    <>
+    <Router>
       <NavBar signedIn={signedIn}></NavBar>
-      <Router>
-        <Route path='/' exact component={HomePage}></Route>
-        <Route path='/signin/' component={SignInPage}></Route>
-        <Route path='/signup/' component={SignUpPage}></Route>
-      </Router>
-    </>
+      <Route path='/' exact component={HomePage}></Route>
+      <Route path='/signin/' component={SignInPage}></Route>
+      <Route path='/signup/' component={SignUpPage}></Route>
+    </Router>
   )
 }
 
