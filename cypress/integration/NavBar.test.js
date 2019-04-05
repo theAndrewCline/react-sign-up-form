@@ -7,6 +7,5 @@ describe('Nav Bar', () => {
       .click()
 
     cy.url().should('contain', '/signin')
-
   })
 })
