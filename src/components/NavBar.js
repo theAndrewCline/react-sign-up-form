@@ -1,6 +1,5 @@
 import React from 'react'
-import { Nav, NavLI, NavUL } from '../DefaultComponents'
-import { Link } from 'react-router-dom'
+import { Nav, NavLI, NavUL, NavLink } from '../DefaultComponents'
 
 
 function NavBar ({ signedIn }) {
@@ -9,7 +8,7 @@ function NavBar ({ signedIn }) {
   )
 
   const SignedOutItems = (
-    <NavLI><Link to="/signin">Sign In</Link></NavLI>
+    <NavLI><NavLink to="/signin">Sign In</NavLink></NavLI>
   )
 
   return (

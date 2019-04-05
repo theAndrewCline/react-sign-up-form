@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './App.css'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import { HashRouter as Router, Route } from "react-router-dom"
 import SignInPage from './pages/SignInPage'
 import SignUpPage from './pages/SignUpPage'
 import HomePage from './pages/HomePage'

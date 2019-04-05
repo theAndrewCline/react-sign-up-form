@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Button = styled.button`
   background: ${props => props.primary ? '#00FFA2' : '#D1D1D1'};
@@ -83,6 +84,11 @@ export const NavUL = styled.ul`
 
 export const NavLI = styled.li`
   margin-left: auto;
+`
+
+export const NavLink = styled(Link)`
+  color: white;
+  text-decoration: none;
 `
 
 export const Page = styled.div`
