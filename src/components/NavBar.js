@@ -4,11 +4,17 @@ import { Nav, NavLI, NavUL, NavLink } from '../DefaultComponents'
 
 function NavBar ({ signedIn }) {
   const SignedInItems = (
-    <NavLI>Sign Out</NavLI>
+    <>
+      <NavLI>User</NavLI>
+      <NavLI>Sign Out</NavLI>
+    </>
   )
 
   const SignedOutItems = (
-    <NavLI><NavLink to="/signin">Sign In</NavLink></NavLI>
+    <>
+      <NavLI><NavLink to="/user">User</NavLink></NavLI>
+      <NavLI><NavLink to="/signin">Sign In</NavLink></NavLI>
+    </>
   )
 
   return (

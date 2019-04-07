@@ -68,6 +68,7 @@ export const H1 = styled.h1`
 `
 
 export const Nav = styled.nav`
+  display: flex;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -79,11 +80,12 @@ export const Nav = styled.nav`
 
 export const NavUL = styled.ul`
   display: flex;
+  margin-left: auto;
   list-style-type: none;
 `
 
 export const NavLI = styled.li`
-  margin-left: auto;
+  margin-left: 1em;
 `
 
 export const NavLink = styled(Link)`
