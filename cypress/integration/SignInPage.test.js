@@ -35,5 +35,12 @@ describe('Sign In Page', () => {
       cy.get('a#signup')
         .should('have.attr', 'href')
     })
+
+    it('should redirect after successful sign in', () => {
+      cy.get('button.signin')
+        .click()
+
+      cy.url().should('not.contain', '/signin').should('be', 'localhost:3000/')
+    })
   })
 })

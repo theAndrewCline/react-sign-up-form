@@ -14,8 +14,13 @@ function App () {
     <Router>
       <NavBar signedIn={signedIn} user={user}></NavBar>
       <Route path='/' exact component={HomePage}></Route>
-      <Route path='/signin/' component={SignInPage}></Route>
-      <Route path='/signup/' component={SignUpPage}></Route>
+      <Route
+        path='/signin'
+        render={
+          () => <SignInPage setSignedIn={setSignedIn}/>
+        }>
+      </Route>
+      <Route path='/signup' component={SignUpPage}></Route>
     </Router>
   )
 }
